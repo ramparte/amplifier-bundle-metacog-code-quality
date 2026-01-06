@@ -1,40 +1,37 @@
-# Amplifier Collection: Code Quality
+# Amplifier Bundle: Code Quality
 
 **Comprehensive code quality analysis for your projects**
 
-This collection provides specialized agents that analyze code for quality issues, security vulnerabilities, performance bottlenecks, and documentation gaps.
+This bundle provides specialized agents that analyze code for quality issues, security vulnerabilities, performance bottlenecks, and documentation gaps.
 
 ## Features
 
-- 🔍 **Static Analysis** - Detect code smells, complexity issues, and maintainability problems
-- 🔒 **Security Scanning** - Find vulnerabilities, insecure patterns, and hardcoded secrets
-- ⚡ **Performance Analysis** - Identify bottlenecks, inefficient algorithms, and optimization opportunities
-- 📚 **Documentation Checking** - Validate docstrings, comments, and README quality
-- 📊 **Comprehensive Reports** - Combined analysis with actionable recommendations
+- Static Analysis - Detect code smells, complexity issues, and maintainability problems
+- Security Scanning - Find vulnerabilities, insecure patterns, and hardcoded secrets
+- Performance Analysis - Identify bottlenecks, inefficient algorithms, and optimization opportunities
+- Documentation Checking - Validate docstrings, comments, and README quality
+- Comprehensive Reports - Combined analysis with actionable recommendations
 
 ## Quick Start
 
 ### Installation
 
 ```bash
-# Install collection (when published)
-amplifier collection add code-quality
+# Run directly from GitHub
+amplifier run --bundle git+https://github.com/ramparte/amplifier-bundle-code-quality@main "Analyze src/"
 
-# Verify installation
-amplifier collection list
-amplifier collection show code-quality
+# Or clone and run locally
+git clone https://github.com/ramparte/amplifier-bundle-code-quality
+amplifier run --bundle ./amplifier-bundle-code-quality/bundle.md "Analyze src/"
 ```
 
 ### Basic Usage
 
 ```bash
 # Run comprehensive quality analysis
-amplifier task "Analyze src/ for all quality issues" --agent quality-aggregator
+amplifier run --bundle code-quality "Analyze src/ for all quality issues"
 
-# Run specific analysis
-amplifier task "Check src/ for security vulnerabilities" --agent security-scanner
-amplifier task "Analyze performance in database.py" --agent performance-analyzer
-amplifier task "Check documentation quality" --agent documentation-checker
+# The quality-aggregator agent will be used by default for comprehensive analysis
 ```
 
 ## Agents
@@ -145,7 +142,7 @@ Patterns are extensible to other languages.
 
 ## Philosophy
 
-This collection embodies Amplifier's core principles:
+This bundle embodies Amplifier's core principles:
 
 - **Ruthless Simplicity**: Each agent has a focused responsibility
 - **Actionable Feedback**: Every issue includes specific suggestions
@@ -179,9 +176,9 @@ MIT License - See [LICENSE](LICENSE)
 
 ## Version
 
-**Collection Version**: 0.1.0  
-**Last Updated**: 2025-12-10
+**Bundle Version**: 0.1.0  
+**Last Updated**: 2026-01-06
 
 ---
 
-**Built with** ❤️ **using Amplifier**
+**Built with Amplifier**
