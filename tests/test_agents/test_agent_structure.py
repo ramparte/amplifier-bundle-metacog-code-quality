@@ -245,8 +245,8 @@ class TestAgentContextReferences:
         """Verify agents reference context files that exist."""
         content = agent_file.read_text()
         
-        # Find context references: @code-quality:context/filename.md
-        pattern = r'@code-quality:context/([^\s]+\.md)'
+        # Find context references: @metacog-metacog-code-quality:context/filename.md
+        pattern = r'@metacog-metacog-code-quality:context/([^\s]+\.md)'
         references = re.findall(pattern, content)
         
         # quality-aggregator might not reference context
@@ -267,9 +267,9 @@ class TestAgentContextReferences:
         """Verify context references use correct format."""
         content = agent_file.read_text()
         
-        # Should use @code-quality:context/ format
+        # Should use @metacog-metacog-code-quality:context/ format
         if '@' in content and 'context' in content:
-            pattern = r'@code-quality:context/[\w-]+\.md'
+            pattern = r'@metacog-metacog-code-quality:context/[\w-]+\.md'
             matches = re.findall(pattern, content)
             
             # If has context references, should be properly formatted

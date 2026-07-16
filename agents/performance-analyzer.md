@@ -15,7 +15,7 @@ providers:
       temperature: 0.3
 ---
 
-@code-quality:context/performance-patterns.md
+@metacog-code-quality:context/performance-patterns.md
 
 # Performance Analyzer Agent
 

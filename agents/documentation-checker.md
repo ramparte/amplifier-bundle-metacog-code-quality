@@ -14,7 +14,7 @@ providers:
       temperature: 0.3
 ---
 
-@code-quality:context/documentation-standards.md
+@metacog-code-quality:context/documentation-standards.md
 
 # Documentation Checker Agent
 

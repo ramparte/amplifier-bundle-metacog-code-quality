@@ -15,7 +15,7 @@ providers:
       temperature: 0.2
 ---
 
-@code-quality:context/security-patterns.md
+@metacog-code-quality:context/security-patterns.md
 
 # Security Scanner Agent
 

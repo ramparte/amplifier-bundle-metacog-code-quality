@@ -9,6 +9,14 @@ bundle:
 
 includes:
   - bundle: git+https://github.com/microsoft/amplifier-foundation@main
+
+agents:
+  include:
+    - metacog-code-quality:documentation-checker
+    - metacog-code-quality:performance-analyzer
+    - metacog-code-quality:quality-aggregator
+    - metacog-code-quality:security-scanner
+    - metacog-code-quality:static-analyzer
 ---
 
 # Metacognitive Code Quality Bundle
